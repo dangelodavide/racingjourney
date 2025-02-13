@@ -1,0 +1,380 @@
+/* Generale */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #e63946;
+  color: #333;
+}
+
+h1 {
+  color: #e63946; 
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Navbar */
+.navbar {
+  padding: 10px 20px; 
+  background-color: #333 !important; 
+  height: 110px;
+}
+
+.navbar-brand img {
+  height: 100px; 
+  width: auto;
+}
+
+.navbar-brand {
+  background-color: transparent !important;
+}
+
+.navbar-nav .nav-link {
+  color: white !important; 
+  font-size: 16px; 
+  background-color: transparent !important; 
+  transition: color 0.3s ease; 
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107 !important; 
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent !important; 
+}
+
+.navbar-toggler-icon {
+  background-color: #ffc107 !important; 
+}
+
+.navbar .btn-outline-light {
+  color: white; 
+  border-color: white; 
+  background-color: transparent !important; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .btn-outline-light:hover {
+  background-color: #e63946; 
+  color: white;
+}
+
+.form-control {
+  border-radius: 5px; 
+}
+
+.input-group-text {
+  border: none; 
+}
+
+.form-control {
+  border: none; 
+  border-radius: 5px; 
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+/* Pulsanti */
+button,
+a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #e63946; 
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover,
+a:hover {
+  background-color: #b71c1c; 
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Logo */
+img {
+  margin: 20px 0;
+  max-width: 150px; 
+}
+
+/* Carousel */
+.carousel {
+  margin-top: -20px;
+}
+  
+.carousel-item {
+  height: 100vh; 
+}
+  
+.carousel-item img {
+  height: 100%; 
+  width: 100%;  
+  max-width: 100%;
+  object-fit: cover; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent; 
+  border: none;
+  filter: invert(100%); 
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: transparent; 
+  border: none; 
+  opacity: 1; 
+  transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 0.7; 
+}
+
+/* Dashboard */
+.dashboard-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Calendario */
+.calendar {
+  width: 70%;
+  background-color: #333;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #ddd;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.day:hover {
+  background-color: #6c757d;
+}
+
+.day.active {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+/* Modale */
+.modal-content {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.modal-header {
+  border-bottom: 1px solid #dee2e6;
+  background-color: #333;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.modal-title {
+  font-size: 1.25rem;
+}
+
+.modal-body {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.modal-footer {
+  border-top: 1px solid #dee2e6;
+  background-color: #333;
+}
+
+/* Pulsanti del modale */
+.btn-primary {
+  background-color: #e63946;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Calendario */
+.calendar {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: -100px;
+}
+
+#calendar-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.day {
+  background-color: #495057;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.day:hover {
+  transform: scale(1.05);
+  background-color: #6c757d;
+}
+
+/* Badge evento */
+.event-badge {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Pulsanti di navigazione del calendario */
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Lista eventi */
+.events-list {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.events-list h4 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.list-group-item {
+  background-color: transparent;
+  color: #333;
+  border: 0px solid #333;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+/* Contenitore pulsanti JSON */
+.d-flex.gap-3 {
+  gap: 10px; /* Spaziatura tra i pulsanti */
+}
+
+#download-json {
+  background-color: #333; /* Azzurro chiaro */
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+label[for="upload-json-input"] {
+  background-color: #333; /* Grigio scuro */
+  color: white; /* Testo bianco */
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#download-json:hover {
+  background-color: #ffc107; /* Azzurro scuro */
+  color: black;
+}
+
+#upload-json + label {
+  background-color: #333;
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#upload-json + label:hover {
+  background-color: #333; /* Giallo scuro */
+}
